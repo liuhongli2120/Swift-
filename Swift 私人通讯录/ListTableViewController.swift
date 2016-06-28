@@ -73,10 +73,11 @@ class ListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //这个地方的必须保证注册过了,在SB中设置或纯代码注册,不然无法识别cell 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         
         //设置cell
-        //这个地方两个 Label 的内容是不一样的,命名也不不一样,一个是 textLabel,一个是 detailTextLabel 
+        //这个地方两个 Label 的内容是不一样的,命名也不不一样,一个是 textLabel,一个是 detailTextLabel
         cell.textLabel?.text = personList[indexPath.row].name
         cell.detailTextLabel?.text = personList[indexPath.row].phone
         

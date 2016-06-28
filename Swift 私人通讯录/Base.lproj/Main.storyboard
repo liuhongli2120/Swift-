@@ -57,7 +57,7 @@
         <!--明细-->
         <scene sceneID="LOR-aZ-c2k">
             <objects>
-                <tableViewController id="gTW-Rd-zxS" sceneMemberID="viewController">
+                <tableViewController id="gTW-Rd-zxS" customClass="DetailTableViewController" customModule="Swift_私人通讯录" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PIU-lj-34k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,8 +131,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="明细" id="0R8-06-lUs">
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="RlG-Z4-VWl"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="RlG-Z4-VWl">
+                            <connections>
+                                <action selector="savePerson:" destination="gTW-Rd-zxS" id="qV9-mw-I7i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameText" destination="Vpm-kW-CV7" id="q3m-fO-CvV"/>
+                        <outlet property="phoneText" destination="94O-e1-Wm3" id="xjm-Kt-gl8"/>
+                        <outlet property="titleText" destination="BNQ-ue-e0f" id="htH-6k-xu8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAI-Yt-2JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

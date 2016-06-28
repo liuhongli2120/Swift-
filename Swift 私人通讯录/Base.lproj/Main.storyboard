@@ -43,7 +43,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="联系人列表" id="9kU-hC-4XP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="R2e-E6-9kz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="R2e-E6-9kz">
+                            <connections>
+                                <action selector="newPerson:" destination="BYZ-38-t0r" id="NSn-Pa-NZd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

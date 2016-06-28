@@ -40,6 +40,11 @@ class DetailTableViewController: UITableViewController {
     }
 
     @IBAction func savePerson(_ sender: AnyObject) {
+        
+        if person == nil {
+            person = Person()
+        }
+        
         // 用 UI 更新person内容
         if person != nil {
             person?.name = nameText.text

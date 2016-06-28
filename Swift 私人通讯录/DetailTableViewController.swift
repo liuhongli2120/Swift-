@@ -31,6 +31,17 @@ class DetailTableViewController: UITableViewController {
     }
 
     @IBAction func savePerson(_ sender: AnyObject) {
+        // 用 UI 更新person内容
+        if person != nil {
+            person?.name = nameText.text
+            person?.phone = phoneText.text
+            person?.title = titleText.text
+            
+            //更新之后返回上一级界面
+            // Expression of type 'UIViewController?' is unused
+            //方法的返回值没有使用
+           _ = navigationController?.popViewController(animated: true)
+        }
         
     }
 

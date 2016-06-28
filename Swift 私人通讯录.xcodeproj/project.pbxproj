@@ -12,6 +12,7 @@
 		F21B0B5C1D22027100F874DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21B0B5B1D22027100F874DD /* Assets.xcassets */; };
 		F21B0B5F1D22027100F874DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21B0B5D1D22027100F874DD /* LaunchScreen.storyboard */; };
 		F21B0B671D22137900F874DD /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B0B661D22137900F874DD /* ListTableViewController.swift */; };
+		F21B0B691D22150700F874DD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B0B681D22150700F874DD /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F21B0B5E1D22027100F874DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21B0B601D22027100F874DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21B0B661D22137900F874DD /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		F21B0B681D22150700F874DD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				F21B0B541D22027100F874DD /* AppDelegate.swift */,
 				F21B0B661D22137900F874DD /* ListTableViewController.swift */,
+				F21B0B681D22150700F874DD /* Person.swift */,
 				F21B0B581D22027100F874DD /* Main.storyboard */,
 				F21B0B5B1D22027100F874DD /* Assets.xcassets */,
 				F21B0B5D1D22027100F874DD /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21B0B691D22150700F874DD /* Person.swift in Sources */,
 				F21B0B551D22027100F874DD /* AppDelegate.swift in Sources */,
 				F21B0B671D22137900F874DD /* ListTableViewController.swift in Sources */,
 			);

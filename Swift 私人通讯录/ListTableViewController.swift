@@ -46,7 +46,7 @@ class ListTableViewController: UITableViewController {
                 //创建Person
                 let p = Person()
                 
-                p.name = "zhangsan-\(i)"
+                p.name = "zhangsan - \(i)"
                 
                 //"%07d", 用来为号码  "占位"
                 p.phone = "182" + String(format: "%07d", arc4random_uniform(1000000))
@@ -63,6 +63,24 @@ class ListTableViewController: UITableViewController {
                 
             })
         }
+    }
+    
+    //MARK: 数据源方法
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return personList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        
+        //设置cell
+        //这个地方两个 Label 的内容是不一样的,命名也不不一样,一个是 textLabel,一个是 detailTextLabel 
+        cell.textLabel?.text = personList[indexPath.row].name
+        cell.detailTextLabel?.text = personList[indexPath.row].phone
+        
+        return cell
     }
 
 
